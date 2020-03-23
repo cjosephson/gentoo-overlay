@@ -9,7 +9,7 @@ DESCRIPTION="VDPAU Backend for Video Acceleration (VA) API"
 HOMEPAGE="https://www.freedesktop.org/wiki/Software/vaapi"
 SRC_URI=""
 
-EGIT_REPO_URI="https://github.com/arekinath/libva-vdpau-driver"
+EGIT_REPO_URI="https://github.com/cjosephson/libva-vdpau-driver"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -24,11 +24,6 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
 DOCS=( NEWS README AUTHORS )
-
-PATCHES=(
-	"${FILESDIR}"/${P}-include-linux-videodev2.h.patch
-	)
-
 
 src_unpack() {
 	kernel_is -ge 4 8 && {
