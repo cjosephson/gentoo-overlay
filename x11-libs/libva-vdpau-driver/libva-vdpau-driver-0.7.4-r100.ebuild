@@ -26,10 +26,6 @@ DEPEND="${RDEPEND}
 DOCS=( NEWS README AUTHORS )
 
 PATCHES=(
-	"${FILESDIR}"/${P}-glext-missing-definition.patch
-	"${FILESDIR}"/${P}-VAEncH264VUIBufferType.patch
-	"${FILESDIR}"/${P}-libvdpau-0.8.patch
-	"${FILESDIR}"/${P}-sigfpe-crash.patch
 	"${FILESDIR}"/${P}-include-linux-videodev2.h.patch
 	)
 
