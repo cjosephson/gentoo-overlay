@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit autotools multilib-minimal git-r3 linux-mod
+inherit autotools multilib-minimal git-r3
 
 DESCRIPTION="VDPAU Backend for Video Acceleration (VA) API"
 HOMEPAGE="https://www.freedesktop.org/wiki/Software/vaapi"
