@@ -37,11 +37,11 @@ src_unpack() {
 }
 
 src_prepare() {
-#	epatch \
-#		"${FILESDIR}"/${P}-glext-missing-definition.patch \
-#		"${FILESDIR}"/${P}-VAEncH264VUIBufferType.patch \
-#		"${FILESDIR}"/${P}-libvdpau-0.8.patch \
-#		"${FILESDIR}"/${P}-include-systime.patch
+	epatch \
+		"${FILESDIR}"/${P}-glext-missing-definition.patch \
+		"${FILESDIR}"/${P}-VAEncH264VUIBufferType.patch \
+		"${FILESDIR}"/${P}-libvdpau-0.8.patch \
+		"${FILESDIR}"/${P}-include-systime.patch
 	sed -i 's:AM_CONFIG_HEADER:AC_CONFIG_HEADERS:' configure.ac || die
 	autotools-multilib_src_prepare
 }
