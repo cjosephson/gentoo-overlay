@@ -10,7 +10,7 @@ DESCRIPTION="Reverse engineered Linux driver for the Broadcom 1570 PCIe webcam"
 HOMEPAGE="https://github.com/patjak/bcwc_pcie"
 SRC_URI=""
 
-EGIT_REPO_URI="https://github.com/patjak/bcwc_pcie"
+EGIT_REPO_URI="https://github.com/cjosephson/bcwc_pcie"
 
 LICENSE=""
 SLOT="0"
